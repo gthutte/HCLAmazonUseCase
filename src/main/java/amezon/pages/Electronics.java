@@ -49,7 +49,7 @@ public void printMenuItems()
             System.out.println(text);
         }
     }
+    
     System.out.println("Total = " + menuList.size());
-
 	}
 }

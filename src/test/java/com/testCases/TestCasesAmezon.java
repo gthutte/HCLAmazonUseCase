@@ -1,5 +1,6 @@
 package com.testCases;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import amezon.pages.TestBase;
@@ -31,10 +32,17 @@ public class TestCasesAmezon extends TestBase
     	el.clickOn();
     }
     @Test
-    public void printMenuItems()
+    public void printMenuItems() throws Exception
     {
     	el.clickOn();
     	el.printMenuItems();
+        captureScreenshot("actualMenu");
+        captureScreenshot("expectedMenu");
+
+        boolean result = compareImages(
+        	    "./src/screenshots/actualMenu.png",
+        	    "./src/screenshots/expectedMenu.png");
+        Assert.assertTrue(result);
     }
 }
 	
