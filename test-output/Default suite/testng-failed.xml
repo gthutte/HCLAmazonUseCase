@@ -6,6 +6,8 @@
       <class name="com.testCases.TestCasesAmezon">
         <methods>
           <include name="openBrowser"/>
+          <include name="clickOnMobileMenu"/>
+          <include name="SetUpPage"/>
         </methods>
       </class> <!-- com.testCases.TestCasesAmezon -->
     </classes>
