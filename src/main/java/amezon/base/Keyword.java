@@ -2,9 +2,7 @@ package amezon.base;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -129,8 +127,6 @@ public class Keyword
 	            }
 	        }
 	    }
-
 	    return true;
-
 	}
 }
