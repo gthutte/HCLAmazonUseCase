@@ -17,19 +17,24 @@ public class TestCasesAmezon extends TestBase
     public void launchTest()
     {
         System.out.println("Test started");
-        
     }
     
     @BeforeMethod(alwaysRun=true)
 	public void SetUpPage()
 	{
+    	
 	el=	PageFactory.initElements(DriverManager.getDriver(), Electronics.class);
-
 	}
     @Test
     public void clickOnMobileMenu()
     {
     	el.clickOn();
+    }
+    @Test
+    public void printMenuItems()
+    {
+    	el.clickOn();
+    	el.printMenuItems();
     }
 }
 	
